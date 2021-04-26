@@ -114,67 +114,26 @@ h1 {
   color: tomato;
 }
 
-.popup {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  color: var(--light);
-  background-color: var(--light-dark);
-  border-radius: 5px;
-}
-
-.popup h3 {
-  padding: 20px;
-}
-
-.popupInfo {
-  color: var(--light);
-  margin-bottom: 20px;
-}
-
-.popupBody {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 90%;
-  padding: 10px;
-}
-
-.popupInput {
-  width: 100%;
-  padding: 10px 20px;
+.deleteAllTasksBtn {
+  padding: 15px 10px;
   border: none;
-  border-radius: 5px;
-  color: var(--light-dark);
-  background-color: var(--light);
-}
-
-.popupBtn {
-  width: 30%;
-  display: inline-block;
-  padding: 10px 22px;
-  margin: 20px;
-  border: none;
-  border-radius: 5px;
-  color: var(--deep-dark);
-  background-color: var(--light);
-  text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
+  transition: background-color 0.3s;
+  display: none;
+  color: rgb(172, 72, 72);
 }
 
-.popupBtn:hover {
-  color: #fff;
-  background-color: var(--light-pink);
+.deleteSelectedTasksBtn {
+  padding: 15px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: none;
+  color: rgb(172, 72, 72);
 }
 
-.dustbin {
-  display: flex;
-  padding: 50px;
+.showDelete {
+  display: inline-block;
 }
