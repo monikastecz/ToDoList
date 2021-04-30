@@ -101,12 +101,13 @@ h1 {
   padding-left: 15px;
 }
 
-.tools button {
+.tools button,
+.deleteAllTasksBtn,
+.deleteSelectedTasksBtn {
   padding: 15px 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .tools button:hover {
@@ -117,22 +118,8 @@ h1 {
   color: tomato;
 }
 
-.deleteAllTasksBtn {
-  padding: 15px 10px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  display: none;
-  color: rgb(172, 72, 72);
-}
-
+.deleteAllTasksBtn,
 .deleteSelectedTasksBtn {
-  padding: 15px 10px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s;
   display: none;
   color: rgb(172, 72, 72);
 }
