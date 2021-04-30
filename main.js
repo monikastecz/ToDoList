@@ -83,6 +83,7 @@ const deleteTask = (e) => {
   if (!$allTasks.length) {
     $deleteAllTasksBtn.classList.remove("showDelete");
     $deleteSelectedTasksBtn.classList.remove("showDelete");
+    $alertInfo.innerText = "Brak zadań na liście";
   }
 };
 
@@ -91,6 +92,7 @@ const deleteAllTasks = (e) => {
   tasks.forEach((task) => task.remove());
   $deleteAllTasksBtn.classList.remove("showDelete");
   $deleteSelectedTasksBtn.classList.remove("showDelete");
+  $alertInfo.innerText = "Brak zadań na liście";
 };
 
 const deleteSelectedTasks = (e) => {
@@ -101,6 +103,7 @@ const deleteSelectedTasks = (e) => {
   if (!$allTasks.length) {
     $deleteAllTasksBtn.classList.remove("showDelete");
     $deleteSelectedTasksBtn.classList.remove("showDelete");
+    $alertInfo.innerText = "Brak zadań na liście";
   }
 };
 

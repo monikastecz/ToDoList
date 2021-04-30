@@ -16,14 +16,13 @@
 body {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   font-family: "Montserrat", sans-serif;
   background-color: var(--light);
 }
 
 h1 {
   color: var(--light);
-  margin-bottom: 30px;
+  margin: 30px 0;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -34,6 +33,7 @@ h1 {
   background: rgb(214, 207, 207);
   box-shadow: 5px 5px 5px rgba(82, 82, 82, 0.4);
   text-align: center;
+  margin: 50px;
 }
 
 .header {
@@ -52,25 +52,24 @@ h1 {
   background-color: var(--light);
 }
 
-.alertInfo {
-  margin-top: 50px;
-  color: var(--dark-grey);
-}
-
 .addBtn {
-  padding: 25px 25px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   color: var(--black);
   background-color: var(--light);
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 0.4s, background-color 0.4s;
 }
 
 .addBtn:hover {
   color: white;
   background-color: var(--light-dark);
+}
+
+.alertInfo {
+  margin-top: 10px;
+  color: var(--dark-grey);
 }
 
 .todoList {
@@ -92,10 +91,14 @@ h1 {
   text-align: left;
   list-style: none;
   background-color: var(--light);
+  word-break: break-all;
 }
 
 .tools {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
 }
 
 .tools button {
